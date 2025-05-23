@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Graphite to GitHub PR Link",
+  "version": "1.0",
+  "description": "Adds a direct link to GitHub PR when viewing a PR on Graphite",
+  "content_scripts": [
+    {
+      "matches": ["https://app.graphite.dev/github/pr/*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
